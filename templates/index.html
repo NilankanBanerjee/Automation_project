@@ -28,6 +28,7 @@
   </nav>
 
   <!-- Main Content Area -->
+<<<<<<< HEAD
    <br><br><br>
   <div class="container-fluid mt-5 pt-5 ">
     <div class="row justify-content-center ">
@@ -55,6 +56,30 @@
         </div>
       </div>
 
+=======
+  <div class="d-flex flex-fill">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h5>Uploaded Files</h5>
+      <ul id="uploadedFilesList" class="list-unstyled"></ul>
+    </div>
+
+    <!-- Upload Form -->
+    <div class="upload-container">
+      <h2>Upload File</h2>
+      <form id="uploadForm" class="d-flex flex-column align-items-center mb-3" action="{{ url_for('home') }}" method="POST" enctype="multipart/form-data">
+        {{ form.hidden_tag() }}
+        <input 
+          type="file" 
+          class="form-control mb-3" 
+          id="fileInput" 
+          name="file" 
+          required>
+        <button type="submit" class="btn btn-primary">Upload</button>
+      </form>
+      <div id="fileInfo" class="mt-2"></div>
+      <div id="fileContent" class="file-content mt-4"></div>
+>>>>>>> fb16d7fb5f08d890709be2c9a81412e13fa69893
     </div>
   </div>
 
